@@ -19,8 +19,8 @@ We’ve compiled the most common questions you might face in a QA interview and 
 5️⃣ [Security Testing](./Security_Testing.md) - Avoid letting hackers turn your app into a data revolving door.  
 6️⃣ [Test Automation](./Test_Automation.md)  - For when you’re tired of clicking buttons and decide to let a robot do the work.  
 7️⃣ [Mobile App Testing](./Mobile_Testing.md)  - Because "it works on my machine" is not a valid excuse when users have a 2016 Android phone.  
-8️⃣ [Testing in Data & Scalability Environments](./Data_Scalability_Testing.md) - Yes, data can break things.  
-9️⃣ [Agile & DevOps Testing](./Agile_DevOps_Testing.md)  - Scrum, Kanban, DevOps? Learn how to stay sane in these environments.  
+8️⃣ [Testing in Data & Scalability Environments](./Data_Scalability_Testing.md) - (TODO) Yes, data can break things.  
+9️⃣ [Agile & DevOps Testing](./Agile_DevOps_Testing.md)  - (TODO) Scrum, Kanban, DevOps? Learn how to stay sane in these environments.  
 🔟 [AI’s Impact on Testing](./AI_Testing.md)  - Because now even AI wants to do our jobs.  
 💡 [Community Challenges & Solutions](./Challenges.md)  
 🎯 **BONUS:** A special section where testers can share real-life challenges they faced and how they solved them. We’ve all had that one bug that made us question life.  
