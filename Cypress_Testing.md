@@ -224,6 +224,66 @@ To ace a Cypress interview:
 - **Know how to handle flakiness and optimize for performance.**
 
 ---
+### **What is WebDriver?**
+
+- **WebDriver** is a standard API used to interact with web browsers.
+- It works by sending HTTP requests (commands) from your test code to a **browser driver** (like ChromeDriver, GeckoDriver).
+- The driver controls the browser, executes actions (clicks, inputs), and sends results back to your code.
+- **Example**: Selenium WebDriver, Appium.
+
+**How WebDriver Works**:
+1. Your test code sends a command (e.g., `click button`).
+2. The WebDriver server sends this command to the browser.
+3. The browser performs the action and sends the result back.
+4. **Result**: This indirect communication makes tests slower and sometimes flaky.
+
+---
+
+### **How Playwright and Cypress Work (Key Difference)**
+
+- **Playwright and Cypress** don’t rely on WebDriver. Instead, they communicate directly with the browser through browser APIs and protocols.
+- **This direct communication is faster, more reliable, and provides better control over browser behavior.**
+
+---
+
+### **Playwright**:
+- Uses the **Chrome DevTools Protocol** (CDP) for Chromium browsers, and native browser protocols for Firefox and WebKit.
+- Can run multiple browsers in parallel, including headless mode.
+- Supports **cross-browser testing** and **multiple tabs**, **emulation** of mobile devices, and **network interception**.
+- **Faster and more reliable than WebDriver** due to direct browser control.
+
+---
+
+### **Cypress**:
+- Runs directly inside the browser as a **JavaScript application**, controlling everything within the browser context.
+- **No separate driver needed** – your tests run alongside your app.
+- Provides built-in **automatic waiting**, **time travel debugging**, and **network stubbing**.
+- **Limitations**:
+  - Supports only **Chromium-based browsers, Firefox, and Edge**.
+  - Doesn’t support **multiple tabs or windows** (yet).
+
+---
+
+### **Summary Table**
+
+| Feature          | **WebDriver**                  | **Playwright**                  | **Cypress**                      |
+|------------------|--------------------------------|----------------------------------|----------------------------------|
+| **Architecture** | Uses external drivers via HTTP | Direct protocol communication    | Runs directly in the browser     |
+| **Speed**        | Slower (network latency)       | Fast (direct access to browser)  | Very fast (in-browser execution) |
+| **Browser Support** | All major browsers          | All major browsers               | Chromium, Firefox, Edge          |
+| **Parallel Tests**| Yes                           | Yes                              | Limited                          |
+| **Mobile Emulation**| Limited                     | Full support                     | Partial (within browser limits)  |
+| **Multi-tab**    | Yes                           | Yes                              | No                               |
+| **Best For**     | Cross-browser, legacy apps    | Modern apps, complex scenarios   | Single-page apps, fast tests     |
+
+---
+
+**In simple words**:
+- **WebDriver** is like sending a message to a friend and waiting for them to reply.
+- **Playwright and Cypress** are like talking directly to your friend face-to-face.
+
+---
+
 ### **How would you test a database for data integrity and related aspects?**
 
 **Answer:**
