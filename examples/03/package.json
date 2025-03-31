@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "cypress": "^14.2.0",
+    "dotenv": "^16.4.7",
+    "typescript": "^5.8.2"
+  }
+}
